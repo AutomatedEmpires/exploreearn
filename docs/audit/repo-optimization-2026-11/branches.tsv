@@ -1,0 +1,61 @@
+last_commit	branch	content_verdict_vs_main	commits_since_merge_base
+2026-06-01	preserve/ee-stash-9	diverges(3/3 files)	2
+2026-06-02	preserve/ee-stash-6	empty	3
+2026-06-02	preserve/ee-stash-7	diverges(3/5 files)	4
+2026-06-02	preserve/ee-stash-8	diverges(12/13 files)	6
+2026-06-05	preserve/ee-stash-3	diverges(4/4 files)	3
+2026-06-05	preserve/ee-stash-4	diverges(3/4 files)	2
+2026-06-05	preserve/ee-stash-5	diverges(7/9 files)	5
+2026-06-06	preserve/ee-stash-1	diverges(19/19 files)	3
+2026-06-06	preserve/ee-stash-2	diverges(29/31 files)	4
+2026-07-06	preserve/ee-stash-0	diverges(13/13 files)	3
+2026-07-09	design/vision-audit-and-4-categories	diverges(5/6 files)	4
+2026-07-10	codex/exact-main-readiness	empty	0
+2026-07-10	preserve/winfinal-ee-exact-main-preview-codex-exact-main-readiness-dirty-20260715	empty	0
+2026-07-12	agent/community-photo-privacy-defaults	diverges(13/16 files)	6
+2026-07-12	agent/docs-operating-standards	diverges(1/1 files)	6
+2026-07-12	agent/explore-earn-founding-host-acquisition	content-in-main	2
+2026-07-12	agent/resend-email-identity	diverges(2/2 files)	1
+2026-07-12	preserve/winfinal-review-explore-245-agent-community-photo-privacy-defaults-dirty-20260715	diverges(10/10 files)	2
+2026-07-14	design/product-experience-overhaul	diverges(342/579 files)	82
+2026-07-15	preserve/ee-dirty-fulltree-20260715	diverges(134/134 files)	5
+2026-07-15	wip/ee-preservation-20260715	diverges(134/134 files)	5
+2026-07-24	claude/verify-scoring-divergence	empty	0
+2026-07-26	claude/wave-applicant-bridge	diverges(12/12 files)	2
+2026-07-26	claude/wave-authz-tests	diverges(10/11 files)	2
+2026-07-26	claude/wave-entitlements	diverges(16/17 files)	2
+2026-07-26	claude/wave-fix-ops	diverges(79/116 files)	16
+2026-07-26	claude/wave-money	diverges(8/14 files)	2
+2026-07-26	claude/wave-self-publish	diverges(13/16 files)	2
+2026-07-26	claude/wave-tier-features	diverges(21/37 files)	4
+2026-07-30	fable/readme-refresh	content-in-main	3
+2026-08-04	codex/production-surface-walk	diverges(22/99 files)	6
+2026-08-05	codex/full-fidelity-walkthroughs	diverges(28/126 files)	4
+2026-08-05	codex/visionary-frontend-rebuild	diverges(23/86 files)	4
+2026-08-08	codex/accepted-card-navigation	diverges(6/12 files)	3
+2026-08-08	codex/admin-claims-mobile	content-in-main	2
+2026-08-08	codex/admin-search	content-in-main	3
+2026-08-08	codex/design-optimization	diverges(11/28 files)	2
+2026-08-08	codex/host-demo-mobile-heading	diverges(1/2 files)	1
+2026-08-08	codex/host-demo-weather-controls	diverges(2/4 files)	2
+2026-08-08	codex/host-listing-form-mobile	content-in-main	2
+2026-08-08	codex/listing-apply-modal-mobile	content-in-main	2
+2026-08-08	codex/listing-detail-navigation	diverges(2/4 files)	1
+2026-08-08	codex/role-true-public-chrome	diverges(3/19 files)	1
+2026-08-08	codex/seeker-application-detail-mobile	diverges(2/3 files)	2
+2026-08-08	codex/seeker-benefit-photo-parity	diverges(4/20 files)	3
+2026-08-08	codex/shared-surface-optimization	diverges(2/14 files)	1
+2026-08-09	codex/application-submission-authority	diverges(9/20 files)	3
+2026-08-09	codex/notification-action-navigation	diverges(1/13 files)	2
+2026-08-09	codex/offered-decision-flow	diverges(4/15 files)	2
+2026-08-09	codex/resume-experience-identity	diverges(7/32 files)	2
+2026-08-09	codex/resume-save-before-navigation	diverges(2/4 files)	3
+2026-08-10	claude/serene-franklin-kni5s1	empty	0
+2026-08-10	codex/host-outreach-discovery-authority	diverges(1/81 files)	4
+2026-08-10	codex/remove-discovery-card-metadata	content-in-main	1
+2026-09-11	dependabot/npm_and_yarn/sharp-0.35.4	diverges(2/2 files)	1
+2026-09-11	dependabot/npm_and_yarn/vitest-4.1.11	diverges(5/5 files)	1
+2026-09-13	dependabot/npm_and_yarn/next-15.5.24	diverges(2/2 files)	1
+2026-10-20	dependabot/npm_and_yarn/modelcontextprotocol/sdk-1.32.0	diverges(2/2 files)	1
+2026-10-21	dependabot/npm_and_yarn/apps/web/modelcontextprotocol/sdk-1.32.0	diverges(1/1 files)	1
+2026-10-27	dependabot/npm_and_yarn/sentry/nextjs-10.75.2	diverges(2/2 files)	1

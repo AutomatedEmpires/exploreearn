@@ -1,0 +1,993 @@
+{
+  "generated": "2026-11-02",
+  "method": "git ls-tree -r -l over committed trees; duplicate detection by git blob SHA (content hash). Working-tree SHA-256 cross-check matched (30 groups at origin/main).",
+  "refs": {
+    "before": "732f300614ad25fd89ea1cf596f56096040e8157",
+    "after": "606e9724f5358d44bd07466c055f77de7c75c79a"
+  },
+  "history": {
+    "commitsOnMain": 548,
+    "commitsAllRefs": 771,
+    "remoteBranches": 61,
+    "tags": 0,
+    "packSizeKiB_allRefs": 96707,
+    "note": "History-only blobs (absent from the main tip) total ~3.3 MiB compressed; ~87 MiB of the pack is blobs still present at the tip, dominated by incompressible PNGs. Removing tip files therefore shrinks checkouts but not full clones until history is rewritten or a partial clone is used."
+  },
+  "before": {
+    "trackedFiles": 1973,
+    "trackedBytes": 159250203,
+    "binaryBytes": 145593247,
+    "binaryFiles": 115,
+    "bytesByExtension": [
+      {
+        "ext": ".png",
+        "files": 55,
+        "bytes": 136636091
+      },
+      {
+        "ext": ".webp",
+        "files": 60,
+        "bytes": 8957156
+      },
+      {
+        "ext": ".ts",
+        "files": 650,
+        "bytes": 5152225
+      },
+      {
+        "ext": ".tsx",
+        "files": 488,
+        "bytes": 2888057
+      },
+      {
+        "ext": ".css",
+        "files": 268,
+        "bytes": 1618971
+      },
+      {
+        "ext": ".sql",
+        "files": 112,
+        "bytes": 1335473
+      },
+      {
+        "ext": ".md",
+        "files": 201,
+        "bytes": 1285623
+      },
+      {
+        "ext": ".mjs",
+        "files": 52,
+        "bytes": 383472
+      },
+      {
+        "ext": ".json",
+        "files": 43,
+        "bytes": 308362
+      },
+      {
+        "ext": ".yaml",
+        "files": 3,
+        "bytes": 222530
+      },
+      {
+        "ext": ".html",
+        "files": 4,
+        "bytes": 218959
+      },
+      {
+        "ext": ".csv",
+        "files": 2,
+        "bytes": 146648
+      },
+      {
+        "ext": ".yml",
+        "files": 15,
+        "bytes": 59908
+      },
+      {
+        "ext": ".js",
+        "files": 5,
+        "bytes": 19950
+      },
+      {
+        "ext": ".example",
+        "files": 4,
+        "bytes": 12482
+      }
+    ],
+    "bytesByTopLevel": [
+      {
+        "path": "docs",
+        "bytes": 137929715
+      },
+      {
+        "path": "apps",
+        "bytes": 16468635
+      },
+      {
+        "path": "packages",
+        "bytes": 2358413
+      },
+      {
+        "path": "tools",
+        "bytes": 924529
+      },
+      {
+        "path": "supabase",
+        "bytes": 744906
+      },
+      {
+        "path": "ops",
+        "bytes": 258171
+      },
+      {
+        "path": "pnpm-lock.yaml",
+        "bytes": 222483
+      },
+      {
+        "path": "data",
+        "bytes": 146648
+      },
+      {
+        "path": "scripts",
+        "bytes": 74932
+      },
+      {
+        "path": ".github",
+        "bytes": 64039
+      },
+      {
+        "path": ".claude",
+        "bytes": 16732
+      },
+      {
+        "path": "AGENTS.md",
+        "bytes": 11054
+      }
+    ],
+    "bytesByDirDepth3": [
+      {
+        "path": "docs/design/reference",
+        "bytes": 136984524
+      },
+      {
+        "path": "apps/web/public",
+        "bytes": 9058011
+      },
+      {
+        "path": "apps/web/components",
+        "bytes": 3736042
+      },
+      {
+        "path": "apps/web/app",
+        "bytes": 1494861
+      },
+      {
+        "path": "apps/web/tests",
+        "bytes": 1430635
+      },
+      {
+        "path": "packages/db/src",
+        "bytes": 1112092
+      },
+      {
+        "path": "packages/db/tests",
+        "bytes": 759630
+      },
+      {
+        "path": "tools/db-assert/sql",
+        "bytes": 594436
+      },
+      {
+        "path": "apps/web/services",
+        "bytes": 288214
+      },
+      {
+        "path": "apps/web/lib",
+        "bytes": 243724
+      },
+      {
+        "path": "packages/contracts/src",
+        "bytes": 235720
+      },
+      {
+        "path": "pnpm-lock.yaml",
+        "bytes": 222483
+      },
+      {
+        "path": "ops/growth/explore-and-earn",
+        "bytes": 186575
+      },
+      {
+        "path": "data/growth/explore-and-earn",
+        "bytes": 146648
+      },
+      {
+        "path": "packages/ui/src",
+        "bytes": 143578
+      }
+    ],
+    "largestFiles": [
+      {
+        "path": "docs/design/reference/ui-ideas-2/featured seeker applicant card.png",
+        "bytes": 3654282
+      },
+      {
+        "path": "docs/design/reference/ui-ideas/featured seeker applicant card.png",
+        "bytes": 3654282
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/seeker applicant card.png",
+        "bytes": 3428540
+      },
+      {
+        "path": "docs/design/reference/ui-ideas/seeker applicant card.png",
+        "bytes": 3428540
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/seeker discovery card saved.png",
+        "bytes": 3348444
+      },
+      {
+        "path": "docs/design/reference/ui-ideas/seeker discovery card saved.png",
+        "bytes": 3348444
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/seeker discovery card offered.png",
+        "bytes": 3253567
+      },
+      {
+        "path": "docs/design/reference/ui-ideas/seeker discovery card offered.png",
+        "bytes": 3253567
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/seeker discovery card applied.png",
+        "bytes": 3248067
+      },
+      {
+        "path": "docs/design/reference/ui-ideas/seeker discovery card applied.png",
+        "bytes": 3248067
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/seeker discovery card schedule.png",
+        "bytes": 3192787
+      },
+      {
+        "path": "docs/design/reference/ui-ideas/seeker discovery card schedule.png",
+        "bytes": 3192787
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/community dashboard announcements (mobile.png",
+        "bytes": 2942413
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/community dashboard announcements (pc).png",
+        "bytes": 2888725
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/community dashboard feed (pc_.png",
+        "bytes": 2877743
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/community dashboard feed mobile.png",
+        "bytes": 2834091
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/ChatGPT Image Jun 8, 2026, 04_32_47 PM.png",
+        "bytes": 2826803
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/seeker photo card.png",
+        "bytes": 2804469
+      },
+      {
+        "path": "docs/design/reference/ui-ideas/seeker photo card.png",
+        "bytes": 2804469
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/community dashboard photos (pc).png",
+        "bytes": 2778986
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/ChatGPT Image Jun 8, 2026, 04_36_12 PM.png",
+        "bytes": 2742089
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/housing popup.png",
+        "bytes": 2741564
+      },
+      {
+        "path": "docs/design/reference/ui-ideas/housing popup.png",
+        "bytes": 2741564
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/community dashboard photos mobile.png",
+        "bytes": 2738001
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/seeker profile popup.png",
+        "bytes": 2635805
+      },
+      {
+        "path": "docs/design/reference/ui-ideas/seeker profile popup.png",
+        "bytes": 2635805
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/meals popup.png",
+        "bytes": 2620120
+      },
+      {
+        "path": "docs/design/reference/ui-ideas/meals popup.png",
+        "bytes": 2620120
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/message seeker popup.png",
+        "bytes": 2609154
+      },
+      {
+        "path": "docs/design/reference/ui-ideas/message seeker popup.png",
+        "bytes": 2609154
+      }
+    ],
+    "exactDuplicateGroups": 30,
+    "redundantDuplicateBytes": 56977855,
+    "duplicateGroups": [
+      {
+        "gitBlobSha": "920a16e2bdfe82e9011068b8a75fd3cd2e587878",
+        "bytes": 3654282,
+        "paths": [
+          "docs/design/reference/ui-ideas-2/featured seeker applicant card.png",
+          "docs/design/reference/ui-ideas/featured seeker applicant card.png"
+        ]
+      },
+      {
+        "gitBlobSha": "44a77a29c82352c5f5404b862e86688e29c0dcf5",
+        "bytes": 3428540,
+        "paths": [
+          "docs/design/reference/ui-ideas-2/seeker applicant card.png",
+          "docs/design/reference/ui-ideas/seeker applicant card.png"
+        ]
+      },
+      {
+        "gitBlobSha": "7145852e9cba3d91ad61934aba5e053e78c821f4",
+        "bytes": 3348444,
+        "paths": [
+          "docs/design/reference/ui-ideas-2/seeker discovery card saved.png",
+          "docs/design/reference/ui-ideas/seeker discovery card saved.png"
+        ]
+      },
+      {
+        "gitBlobSha": "a5c21743616ae86961ac1516abc659ef6f13540b",
+        "bytes": 3253567,
+        "paths": [
+          "docs/design/reference/ui-ideas-2/seeker discovery card offered.png",
+          "docs/design/reference/ui-ideas/seeker discovery card offered.png"
+        ]
+      },
+      {
+        "gitBlobSha": "da889d08256b2a6a86fc2d8cf124384fcde20496",
+        "bytes": 3248067,
+        "paths": [
+          "docs/design/reference/ui-ideas-2/seeker discovery card applied.png",
+          "docs/design/reference/ui-ideas/seeker discovery card applied.png"
+        ]
+      },
+      {
+        "gitBlobSha": "c4006291ac81c508bc2eb0278386408d7d9b47e5",
+        "bytes": 3192787,
+        "paths": [
+          "docs/design/reference/ui-ideas-2/seeker discovery card schedule.png",
+          "docs/design/reference/ui-ideas/seeker discovery card schedule.png"
+        ]
+      },
+      {
+        "gitBlobSha": "768f4ffc5acde48c7c50d898188db0dda0cdda0b",
+        "bytes": 2804469,
+        "paths": [
+          "docs/design/reference/ui-ideas-2/seeker photo card.png",
+          "docs/design/reference/ui-ideas/seeker photo card.png"
+        ]
+      },
+      {
+        "gitBlobSha": "a7233f25a0946f1605e4eacbae43e2c12d970e15",
+        "bytes": 2741564,
+        "paths": [
+          "docs/design/reference/ui-ideas-2/housing popup.png",
+          "docs/design/reference/ui-ideas/housing popup.png"
+        ]
+      },
+      {
+        "gitBlobSha": "50b85ab9e0b008315ae3629b162acdc07e1352f1",
+        "bytes": 2635805,
+        "paths": [
+          "docs/design/reference/ui-ideas-2/seeker profile popup.png",
+          "docs/design/reference/ui-ideas/seeker profile popup.png"
+        ]
+      },
+      {
+        "gitBlobSha": "6fb3a13893822c0ccda1f58a22924da832f00b6d",
+        "bytes": 2620120,
+        "paths": [
+          "docs/design/reference/ui-ideas-2/meals popup.png",
+          "docs/design/reference/ui-ideas/meals popup.png"
+        ]
+      },
+      {
+        "gitBlobSha": "8b1f3ca1a761c04ebd80eae41db34c33154fc9b5",
+        "bytes": 2609154,
+        "paths": [
+          "docs/design/reference/ui-ideas-2/message seeker popup.png",
+          "docs/design/reference/ui-ideas/message seeker popup.png"
+        ]
+      },
+      {
+        "gitBlobSha": "374fdc5c65a79f4fedf77e68be5de8ec1268b254",
+        "bytes": 2579249,
+        "paths": [
+          "docs/design/reference/ui-ideas-2/quick peek popup card.png",
+          "docs/design/reference/ui-ideas/quick peek popup card.png"
+        ]
+      },
+      {
+        "gitBlobSha": "a9393d50cbca0bb2d58dfe36c6af84ab4987beb9",
+        "bytes": 2553425,
+        "paths": [
+          "docs/design/reference/ui-ideas-2/admin profile popup.png",
+          "docs/design/reference/ui-ideas/admin profile popup.png"
+        ]
+      },
+      {
+        "gitBlobSha": "e338a600589f2b661f40f7b34800c00833b88649",
+        "bytes": 2521542,
+        "paths": [
+          "docs/design/reference/ui-ideas-2/explore&earn profile popup.png",
+          "docs/design/reference/ui-ideas/explore&earn profile popup.png"
+        ]
+      },
+      {
+        "gitBlobSha": "22fab71efeb386d5f87d25c771c80e74996548d4",
+        "bytes": 2508149,
+        "paths": [
+          "docs/design/reference/ui-ideas-2/host profile popup.png",
+          "docs/design/reference/ui-ideas/host profile popup.png"
+        ]
+      },
+      {
+        "gitBlobSha": "2eb78e9672ef0880c7d409382b3157fb81d9e335",
+        "bytes": 2423523,
+        "paths": [
+          "docs/design/reference/ui-ideas-2/message host popup.png",
+          "docs/design/reference/ui-ideas/message host popup.png"
+        ]
+      },
+      {
+        "gitBlobSha": "7d4d151d3407380f02d19438b95e5f5919302911",
+        "bytes": 2322060,
+        "paths": [
+          "docs/design/reference/ui-ideas-2/report listing popup.png",
+          "docs/design/reference/ui-ideas/report listing popup.png"
+        ]
+      },
+      {
+        "gitBlobSha": "6f4036d682a477c21b38f924da24f0fffece288b",
+        "bytes": 2223109,
+        "paths": [
+          "docs/design/reference/ui-ideas-2/report seeker popup.png",
+          "docs/design/reference/ui-ideas/report seeker popup.png"
+        ]
+      },
+      {
+        "gitBlobSha": "9cf72ea028138859cebf53296a52c111e96ad7a4",
+        "bytes": 2189899,
+        "paths": [
+          "docs/design/reference/ui-ideas-2/report host popup.png",
+          "docs/design/reference/ui-ideas/report host popup.png"
+        ]
+      },
+      {
+        "gitBlobSha": "f639154500004fb919d469afff6125d2ad6bbf5d",
+        "bytes": 2112807,
+        "paths": [
+          "docs/design/reference/ui-ideas-2/pay popup.png",
+          "docs/design/reference/ui-ideas/pay popup.png"
+        ]
+      },
+      {
+        "gitBlobSha": "95643f1b03defa21b428af12b8ceead92f88eb16",
+        "bytes": 2005271,
+        "paths": [
+          "docs/design/reference/ui-ideas-2/featured employers reel.png",
+          "docs/design/reference/ui-ideas/featured employers reel.png"
+        ]
+      },
+      {
+        "gitBlobSha": "01ba5f6ec5d30967ea92256c4ca327e6cc53e830",
+        "bytes": 462,
+        "paths": [
+          "apps/web/app/[locale]/(host)/layout.module.css",
+          "apps/web/app/[locale]/(seeker)/layout.module.css"
+        ]
+      },
+      {
+        "gitBlobSha": "1cb741e5e6b7e17b281a36d2aa2c5968067be532",
+        "bytes": 461,
+        "paths": [
+          "tools/github-notion-sync/tsconfig.json",
+          "tools/notion-github-issue-dispatcher/tsconfig.json"
+        ]
+      },
+      {
+        "gitBlobSha": "250f4c1883727e3d56d057f21c307056a47bd862",
+        "bytes": 78,
+        "paths": [
+          "apps/web/app/[locale]/(host)/host/analytics/page.module.css",
+          "apps/web/app/[locale]/(host)/host/help/page.module.css",
+          "apps/web/app/[locale]/(host)/host/listings/[id]/edit/page.module.css",
+          "apps/web/app/[locale]/(host)/host/messages/page.module.css",
+          "apps/web/app/[locale]/(host)/host/profile/page.module.css",
+          "apps/web/app/[locale]/(host)/host/settings/page.module.css"
+        ]
+      },
+      {
+        "gitBlobSha": "d2f8279f5cec3687eba755c12c5e8eb30fb8a009",
+        "bytes": 263,
+        "paths": [
+          "apps/web/app/[locale]/(seeker)/not-selected/not-selected.module.css",
+          "apps/web/app/[locale]/(seeker)/withdrawn/withdrawn.module.css"
+        ]
+      },
+      {
+        "gitBlobSha": "3246cc3263813fe13af18acb2492a7108d9fd81e",
+        "bytes": 171,
+        "paths": [
+          "apps/jobs/tsconfig.json",
+          "packages/db/tsconfig.json"
+        ]
+      },
+      {
+        "gitBlobSha": "4b09395bdb20a52681053ead9b4975b0926a42b6",
+        "bytes": 147,
+        "paths": [
+          "packages/stripe-seed/tsconfig.json",
+          "packages/test-utils/tsconfig.json"
+        ]
+      },
+      {
+        "gitBlobSha": "b8e25f180d1c4f4b28e853302e8d2a0088330bdc",
+        "bytes": 83,
+        "paths": [
+          "apps/web/app/[locale]/(host)/host/messages/[id]/page.module.css",
+          "apps/web/app/[locale]/(host)/host/profile/edit/page.module.css"
+        ]
+      },
+      {
+        "gitBlobSha": "4cacd205cb053476d44ca2e5949011556bb26cf9",
+        "bytes": 45,
+        "paths": [
+          "tools/github-notion-sync/.gitignore",
+          "tools/notion-github-issue-dispatcher/.gitignore"
+        ]
+      },
+      {
+        "gitBlobSha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+        "bytes": 0,
+        "paths": [
+          ".agents/backend-engineer.md",
+          ".agents/database-engineer.md",
+          ".agents/devops-engineer.md",
+          ".agents/frontend-engineer.md",
+          ".agents/product-manager.md",
+          ".agents/ux-designer.md",
+          "venture.yaml"
+        ]
+      }
+    ]
+  },
+  "after": {
+    "trackedFiles": 1953,
+    "trackedBytes": 102282318,
+    "binaryBytes": 88617414,
+    "binaryFiles": 94,
+    "bytesByExtension": [
+      {
+        "ext": ".png",
+        "files": 34,
+        "bytes": 79660258
+      },
+      {
+        "ext": ".webp",
+        "files": 60,
+        "bytes": 8957156
+      },
+      {
+        "ext": ".ts",
+        "files": 650,
+        "bytes": 5152737
+      },
+      {
+        "ext": ".tsx",
+        "files": 488,
+        "bytes": 2888057
+      },
+      {
+        "ext": ".css",
+        "files": 268,
+        "bytes": 1618971
+      },
+      {
+        "ext": ".sql",
+        "files": 112,
+        "bytes": 1335473
+      },
+      {
+        "ext": ".md",
+        "files": 200,
+        "bytes": 1285386
+      },
+      {
+        "ext": ".mjs",
+        "files": 53,
+        "bytes": 387871
+      },
+      {
+        "ext": ".json",
+        "files": 44,
+        "bytes": 310635
+      },
+      {
+        "ext": ".yaml",
+        "files": 3,
+        "bytes": 222530
+      },
+      {
+        "ext": ".html",
+        "files": 4,
+        "bytes": 218959
+      },
+      {
+        "ext": ".csv",
+        "files": 2,
+        "bytes": 146648
+      },
+      {
+        "ext": ".yml",
+        "files": 15,
+        "bytes": 59908
+      },
+      {
+        "ext": ".js",
+        "files": 5,
+        "bytes": 19950
+      },
+      {
+        "ext": ".example",
+        "files": 4,
+        "bytes": 12482
+      }
+    ],
+    "bytesByTopLevel": [
+      {
+        "path": "docs",
+        "bytes": 80953645
+      },
+      {
+        "path": "apps",
+        "bytes": 16469147
+      },
+      {
+        "path": "packages",
+        "bytes": 2358413
+      },
+      {
+        "path": "tools",
+        "bytes": 931155
+      },
+      {
+        "path": "supabase",
+        "bytes": 744906
+      },
+      {
+        "path": "ops",
+        "bytes": 258171
+      },
+      {
+        "path": "pnpm-lock.yaml",
+        "bytes": 222483
+      },
+      {
+        "path": "data",
+        "bytes": 146648
+      },
+      {
+        "path": "scripts",
+        "bytes": 74932
+      },
+      {
+        "path": ".github",
+        "bytes": 64039
+      },
+      {
+        "path": ".claude",
+        "bytes": 16732
+      },
+      {
+        "path": "AGENTS.md",
+        "bytes": 11054
+      }
+    ],
+    "bytesByDirDepth3": [
+      {
+        "path": "docs/design/reference",
+        "bytes": 80008454
+      },
+      {
+        "path": "apps/web/public",
+        "bytes": 9058011
+      },
+      {
+        "path": "apps/web/components",
+        "bytes": 3736042
+      },
+      {
+        "path": "apps/web/app",
+        "bytes": 1494861
+      },
+      {
+        "path": "apps/web/tests",
+        "bytes": 1431147
+      },
+      {
+        "path": "packages/db/src",
+        "bytes": 1112092
+      },
+      {
+        "path": "packages/db/tests",
+        "bytes": 759630
+      },
+      {
+        "path": "tools/db-assert/sql",
+        "bytes": 594436
+      },
+      {
+        "path": "apps/web/services",
+        "bytes": 288214
+      },
+      {
+        "path": "apps/web/lib",
+        "bytes": 243724
+      },
+      {
+        "path": "packages/contracts/src",
+        "bytes": 235720
+      },
+      {
+        "path": "pnpm-lock.yaml",
+        "bytes": 222483
+      },
+      {
+        "path": "ops/growth/explore-and-earn",
+        "bytes": 186575
+      },
+      {
+        "path": "data/growth/explore-and-earn",
+        "bytes": 146648
+      },
+      {
+        "path": "packages/ui/src",
+        "bytes": 143578
+      }
+    ],
+    "largestFiles": [
+      {
+        "path": "docs/design/reference/ui-ideas-2/featured seeker applicant card.png",
+        "bytes": 3654282
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/seeker applicant card.png",
+        "bytes": 3428540
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/seeker discovery card saved.png",
+        "bytes": 3348444
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/seeker discovery card offered.png",
+        "bytes": 3253567
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/seeker discovery card applied.png",
+        "bytes": 3248067
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/seeker discovery card schedule.png",
+        "bytes": 3192787
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/community dashboard announcements (mobile.png",
+        "bytes": 2942413
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/community dashboard announcements (pc).png",
+        "bytes": 2888725
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/community dashboard feed (pc_.png",
+        "bytes": 2877743
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/community dashboard feed mobile.png",
+        "bytes": 2834091
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/ChatGPT Image Jun 8, 2026, 04_32_47 PM.png",
+        "bytes": 2826803
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/seeker photo card.png",
+        "bytes": 2804469
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/community dashboard photos (pc).png",
+        "bytes": 2778986
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/ChatGPT Image Jun 8, 2026, 04_36_12 PM.png",
+        "bytes": 2742089
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/housing popup.png",
+        "bytes": 2741564
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/community dashboard photos mobile.png",
+        "bytes": 2738001
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/seeker profile popup.png",
+        "bytes": 2635805
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/meals popup.png",
+        "bytes": 2620120
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/message seeker popup.png",
+        "bytes": 2609154
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/quick peek popup card.png",
+        "bytes": 2579249
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/admin profile popup.png",
+        "bytes": 2553425
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/explore&earn profile popup.png",
+        "bytes": 2521542
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/host profile popup.png",
+        "bytes": 2508149
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/message host popup.png",
+        "bytes": 2423523
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/report listing popup.png",
+        "bytes": 2322060
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/report seeker popup.png",
+        "bytes": 2223109
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/report host popup.png",
+        "bytes": 2189899
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/pay popup.png",
+        "bytes": 2112807
+      },
+      {
+        "path": "docs/design/reference/ui-ideas-2/featured employers reel.png",
+        "bytes": 2005271
+      },
+      {
+        "path": "apps/web/public/photos/trail-03-1600.webp",
+        "bytes": 496204
+      }
+    ],
+    "exactDuplicateGroups": 9,
+    "redundantDuplicateBytes": 2022,
+    "duplicateGroups": [
+      {
+        "gitBlobSha": "01ba5f6ec5d30967ea92256c4ca327e6cc53e830",
+        "bytes": 462,
+        "paths": [
+          "apps/web/app/[locale]/(host)/layout.module.css",
+          "apps/web/app/[locale]/(seeker)/layout.module.css"
+        ]
+      },
+      {
+        "gitBlobSha": "1cb741e5e6b7e17b281a36d2aa2c5968067be532",
+        "bytes": 461,
+        "paths": [
+          "tools/github-notion-sync/tsconfig.json",
+          "tools/notion-github-issue-dispatcher/tsconfig.json"
+        ]
+      },
+      {
+        "gitBlobSha": "250f4c1883727e3d56d057f21c307056a47bd862",
+        "bytes": 78,
+        "paths": [
+          "apps/web/app/[locale]/(host)/host/analytics/page.module.css",
+          "apps/web/app/[locale]/(host)/host/help/page.module.css",
+          "apps/web/app/[locale]/(host)/host/listings/[id]/edit/page.module.css",
+          "apps/web/app/[locale]/(host)/host/messages/page.module.css",
+          "apps/web/app/[locale]/(host)/host/profile/page.module.css",
+          "apps/web/app/[locale]/(host)/host/settings/page.module.css"
+        ]
+      },
+      {
+        "gitBlobSha": "d2f8279f5cec3687eba755c12c5e8eb30fb8a009",
+        "bytes": 263,
+        "paths": [
+          "apps/web/app/[locale]/(seeker)/not-selected/not-selected.module.css",
+          "apps/web/app/[locale]/(seeker)/withdrawn/withdrawn.module.css"
+        ]
+      },
+      {
+        "gitBlobSha": "3246cc3263813fe13af18acb2492a7108d9fd81e",
+        "bytes": 171,
+        "paths": [
+          "apps/jobs/tsconfig.json",
+          "packages/db/tsconfig.json"
+        ]
+      },
+      {
+        "gitBlobSha": "4b09395bdb20a52681053ead9b4975b0926a42b6",
+        "bytes": 147,
+        "paths": [
+          "packages/stripe-seed/tsconfig.json",
+          "packages/test-utils/tsconfig.json"
+        ]
+      },
+      {
+        "gitBlobSha": "b8e25f180d1c4f4b28e853302e8d2a0088330bdc",
+        "bytes": 83,
+        "paths": [
+          "apps/web/app/[locale]/(host)/host/messages/[id]/page.module.css",
+          "apps/web/app/[locale]/(host)/host/profile/edit/page.module.css"
+        ]
+      },
+      {
+        "gitBlobSha": "4cacd205cb053476d44ca2e5949011556bb26cf9",
+        "bytes": 45,
+        "paths": [
+          "tools/github-notion-sync/.gitignore",
+          "tools/notion-github-issue-dispatcher/.gitignore"
+        ]
+      },
+      {
+        "gitBlobSha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+        "bytes": 0,
+        "paths": [
+          ".agents/backend-engineer.md",
+          ".agents/database-engineer.md",
+          ".agents/devops-engineer.md",
+          ".agents/frontend-engineer.md",
+          ".agents/product-manager.md",
+          ".agents/ux-designer.md",
+          "venture.yaml"
+        ]
+      }
+    ]
+  },
+  "delta": {
+    "trackedBytes": -56967885,
+    "trackedFiles": -20,
+    "binaryBytes": -56975833
+  }
+}
