@@ -7,7 +7,7 @@ import {
   vi,
 } from "vitest";
 
-import { _resetDedup, hashIdempotencyKey, sendMail } from "../index.js";
+import { _resetDedup, hashIdempotencyKey, sendMail } from "../index";
 
 const mockFetch = vi.fn();
 

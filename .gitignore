@@ -26,3 +26,42 @@ playwright-report/
 # Photo-bucket seeder run artifacts (regenerated per run)
 scripts/photo-buckets.manifest.json
 scripts/photo-buckets.seed-fragment.ts
+
+# ── Binary hygiene (repository-optimization 2026-11-02) ─────────────────────
+# Ignoring never untracks a committed file; it stops NEW binaries being swept in
+# by `git add -A`. Legitimate product assets live under apps/web/public/ and are
+# NOT matched below. To deliberately commit a reference image, use
+# `git add -f` and keep it under the binary budget (tools/scripts/check-binary-budget.mjs).
+
+# Design source / editing files: keep them in external storage, never in git.
+*.psd
+*.psb
+*.ai
+*.sketch
+*.fig
+*.xd
+*.afdesign
+*.heic
+*.mov
+*.mp4
+*.zip
+*.7z
+*.tgz
+
+# New raster images anywhere under docs/ (reference comps, screenshots, exports).
+# The existing curated set in docs/design/reference/ui-ideas-2/ stays tracked.
+docs/**/*.png
+docs/**/*.jpg
+docs/**/*.jpeg
+docs/**/*.webp
+docs/**/*.gif
+
+# Playwright / Lighthouse output wherever it is generated
+blob-report/
+.lighthouseci/
+lighthouse-report*.html
+
+# Editor and OS cruft
+.idea/
+Thumbs.db
+*.swp

@@ -23,7 +23,7 @@
  * proved against a real database in
  * tools/db-assert/sql/assert_founding_host_program.sql.
  */
-import { beforeEach, describe, expect, it, vi } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
 import {
   resolveFoundingProgramView,
@@ -210,10 +210,21 @@ async function redirectedTo(run: () => Promise<unknown>): Promise<string> {
 
 beforeEach(() => {
   vi.clearAllMocks();
+  // startHostCheckoutAction resolves the view against the REAL clock, while the
+  // fixtures above are fixed dates. Without pinning the clock the "open" row's
+  // FUTURE deadline silently became a past one on 2026-09-01, the happy-path
+  // test failed, and every "refuses" case below passed for the wrong reason.
+  // Only Date is faked so the action's awaited promises still resolve.
+  vi.useFakeTimers({ toFake: ["Date"] });
+  vi.setSystemTime(NOW);
   authMock.mockResolvedValue({ userId: "user_1", getToken: async () => "t" });
   createCheckoutSessionMock.mockResolvedValue({ url: "https://checkout.test/s" });
   hasFoundingConfigMock.mockReturnValue(true);
   getFoundingProgramMock.mockResolvedValue(row());
+});
+
+afterEach(() => {
+  vi.useRealTimers();
 });
 
 describe("startHostCheckoutAction and the discounted rate", () => {
