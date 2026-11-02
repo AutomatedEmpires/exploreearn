@@ -13,7 +13,7 @@ Every proposed deletion is classified as **Safe** (done in this PR), **Condition
 | **S5** | Added Spark/production isolation rules, tests and CLI. Not wired. | 3 new | — | SPARK_PRODUCTION_ISOLATION.md | Additive, with no runtime import. |
 | **S6** | Untracked 8 build artifacts committed inside package `src/`: `mailer`, `stripe-seed` and `test-utils` `index.{js,d.ts}`, plus `db/src/types.gen.{js,d.ts}`. Set `outDir: ./dist` (gitignored) so `tsc -b` stops emitting beside source. The mailer test now imports `../index`, not `../index.js`. | 8 removed, 4 edited | 0.29 MB | **Correctness, not size.** vitest was running the emitted `index.js`, not `index.ts`: appending a `throw` to `index.js` broke the suite. `types.gen.d.ts` (139 KB, 2026-06-06) had drifted from `types.gen.ts` (104 KB), and TS never resolved it. Every `exports` map points at `src/*.ts`. | Low. Typecheck, all suites and `pnpm build` pass. Revert the commit to undo. |
 
-**Net result:** tracked tree goes from **159.25 MB to ~102.0 MB** before the new reports (about 60 KB of Markdown, JSON and TSV are added). No production file was modified.
+**Net result:** tracked tree goes from **159.25 MB to 102.26 MB**, measured *including* the new reports (about 100 KB of Markdown, JSON and TSV). No production source file was modified (S6 changes only package `tsconfig` emit paths and one test import).
 
 ## 2. Conditional: needs a decision; not applied
 

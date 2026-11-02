@@ -3,11 +3,11 @@
   "method": "git ls-tree -r -l over committed trees; duplicate detection by git blob SHA (content hash). Working-tree SHA-256 cross-check matched (30 groups at origin/main).",
   "refs": {
     "before": "732f300614ad25fd89ea1cf596f56096040e8157",
-    "after": "606e9724f5358d44bd07466c055f77de7c75c79a"
+    "after": "be9776bace681984df949afcaefd41df7dcb98c3"
   },
   "history": {
     "commitsOnMain": 548,
-    "commitsAllRefs": 771,
+    "commitsAllRefs": 774,
     "remoteBranches": 61,
     "tags": 0,
     "packSizeKiB_allRefs": 96707,
@@ -584,8 +584,8 @@
     ]
   },
   "after": {
-    "trackedFiles": 1953,
-    "trackedBytes": 102282318,
+    "trackedFiles": 1956,
+    "trackedBytes": 102257842,
     "binaryBytes": 88617414,
     "binaryFiles": 94,
     "bytesByExtension": [
@@ -601,8 +601,8 @@
       },
       {
         "ext": ".ts",
-        "files": 650,
-        "bytes": 5152737
+        "files": 648,
+        "bytes": 5037147
       },
       {
         "ext": ".tsx",
@@ -615,24 +615,24 @@
         "bytes": 1618971
       },
       {
+        "ext": ".md",
+        "files": 206,
+        "bytes": 1353046
+      },
+      {
         "ext": ".sql",
         "files": 112,
         "bytes": 1335473
       },
       {
-        "ext": ".md",
-        "files": 200,
-        "bytes": 1285386
-      },
-      {
         "ext": ".mjs",
-        "files": 53,
-        "bytes": 387871
+        "files": 54,
+        "bytes": 390414
       },
       {
         "ext": ".json",
-        "files": 44,
-        "bytes": 310635
+        "files": 45,
+        "bytes": 337587
       },
       {
         "ext": ".yaml",
@@ -655,32 +655,32 @@
         "bytes": 59908
       },
       {
-        "ext": ".js",
-        "files": 5,
-        "bytes": 19950
-      },
-      {
         "ext": ".example",
         "files": 4,
         "bytes": 12482
+      },
+      {
+        "ext": ".js",
+        "files": 1,
+        "bytes": 9946
       }
     ],
     "bytesByTopLevel": [
       {
         "path": "docs",
-        "bytes": 80953645
+        "bytes": 81052148
       },
       {
         "path": "apps",
-        "bytes": 16469147
+        "bytes": 16496934
       },
       {
         "path": "packages",
-        "bytes": 2358413
+        "bytes": 2205104
       },
       {
         "path": "tools",
-        "bytes": 931155
+        "bytes": 933698
       },
       {
         "path": "supabase",
@@ -734,11 +734,11 @@
       },
       {
         "path": "apps/web/tests",
-        "bytes": 1431147
+        "bytes": 1443020
       },
       {
         "path": "packages/db/src",
-        "bytes": 1112092
+        "bytes": 973061
       },
       {
         "path": "packages/db/tests",
@@ -754,7 +754,7 @@
       },
       {
         "path": "apps/web/lib",
-        "bytes": 243724
+        "bytes": 259638
       },
       {
         "path": "packages/contracts/src",
@@ -899,9 +899,19 @@
         "bytes": 496204
       }
     ],
-    "exactDuplicateGroups": 9,
-    "redundantDuplicateBytes": 2022,
+    "exactDuplicateGroups": 8,
+    "redundantDuplicateBytes": 2217,
     "duplicateGroups": [
+      {
+        "gitBlobSha": "3246cc3263813fe13af18acb2492a7108d9fd81e",
+        "bytes": 171,
+        "paths": [
+          "apps/jobs/tsconfig.json",
+          "packages/db/tsconfig.json",
+          "packages/stripe-seed/tsconfig.json",
+          "packages/test-utils/tsconfig.json"
+        ]
+      },
       {
         "gitBlobSha": "01ba5f6ec5d30967ea92256c4ca327e6cc53e830",
         "bytes": 462,
@@ -939,22 +949,6 @@
         ]
       },
       {
-        "gitBlobSha": "3246cc3263813fe13af18acb2492a7108d9fd81e",
-        "bytes": 171,
-        "paths": [
-          "apps/jobs/tsconfig.json",
-          "packages/db/tsconfig.json"
-        ]
-      },
-      {
-        "gitBlobSha": "4b09395bdb20a52681053ead9b4975b0926a42b6",
-        "bytes": 147,
-        "paths": [
-          "packages/stripe-seed/tsconfig.json",
-          "packages/test-utils/tsconfig.json"
-        ]
-      },
-      {
         "gitBlobSha": "b8e25f180d1c4f4b28e853302e8d2a0088330bdc",
         "bytes": 83,
         "paths": [
@@ -986,8 +980,8 @@
     ]
   },
   "delta": {
-    "trackedBytes": -56967885,
-    "trackedFiles": -20,
+    "trackedBytes": -56992361,
+    "trackedFiles": -17,
     "binaryBytes": -56975833
   }
 }

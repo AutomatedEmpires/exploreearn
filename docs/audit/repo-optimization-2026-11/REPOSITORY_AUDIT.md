@@ -25,7 +25,7 @@
 | # | Finding | Severity | Status |
 |---|---|---|---|
 | F1 | **`main` has been red since 2026-09-01.** A test compared a fixed "future" date (2026-09-01) to the real clock. Every Dependabot PR since 2026-09-13 fails only at the Test step. | **High** | **Fixed** (S4) |
-| F2 | 86.6% of the tracked tree (137.9 MB) is `docs/`, nearly all design-reference PNGs. **57.0 MB of that is a byte-identical duplicate folder.** | High (DX) | **Fixed** (S1): tree 159.25 → 102.28 MB |
+| F2 | 86.6% of the tracked tree (137.9 MB) is `docs/`, nearly all design-reference PNGs. **57.0 MB of that is a byte-identical duplicate folder.** | High (DX) | **Fixed** (S1): tree 159.25 → 102.26 MB |
 | F3 | Git history (94.4 MiB) is ~92% blobs that are *still at the tip*; only 3.3 MiB is history-only. Removing files does not shrink a full clone, but a blobless + sparse clone gives a **42 MB** checkout today. | Info | Documented, with a lean-clone recipe |
 | F4 | The earlier production-build "crash" was **memory exhaustion**, not a compile error. Peak ~5.65 GB, against an 8 GB WSL default shared with the editor. A separate **non-deterministic** failure comes from `next/font/google` fetching at build time. | Med | Root-caused. Mitigation is documented; font self-hosting is planned (A7). |
 | F5 | **No Spark/production isolation exists.** There is one Supabase project (production, formerly labelled "staging"). Previews run `NODE_ENV=production`. 14 call sites fall back silently to the production URL. | **High** before any Spark launch | Stage 1 implemented (rules, tests, CLI). Stages 2–6 are planned and founder-gated. |
@@ -41,7 +41,7 @@
 | Metric | Value |
 |---|---|
 | Tracked files / bytes (before) | 1,973 / **159.25 MB** |
-| Tracked files / bytes (after) | see `inventory.json` → `after` (**~102.0 MB**, including the new reports) |
+| Tracked files / bytes (after) | 1,956 / **102.26 MB**, including the new reports |
 | Tracked binary (before → after) | 145.59 MB (115 files) → 88.62 MB (94 files) |
 | Commits on `main` / all refs | 548 / 771 |
 | Remote branches / tags | 61 / 0 |

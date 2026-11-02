@@ -6,10 +6,10 @@
 
 | Metric | Before (`main`) | After (this branch) | Δ |
 |---|---|---|---|
-| Tracked files | 1,973 | 1,953 + 8 new docs/scripts | −20 net before the new docs |
-| **Tracked working-tree size** | **159.25 MB** | **102.28 MB** | **−56.97 MB (−35.8%)** |
+| Tracked files | 1,973 | 1,956 | −17 (−30 removed, +13 added: reports, guardrail, isolation module) |
+| **Tracked working-tree size** | **159.25 MB** | **102.26 MB** (including all new reports) | **−56.99 MB (−35.8%)** |
 | Tracked binary size (images, fonts, archives) | 145.59 MB (115 files) | 88.62 MB (94 files) | −56.97 MB |
-| Exact-duplicate groups (content hash) | 30 groups, 56.98 MB redundant | 9 groups, 2.0 KB redundant | −56.98 MB |
+| Exact-duplicate groups (content hash) | 30 groups, 56.98 MB redundant | 8 groups, 2.2 KB redundant (tiny CSS modules, per-package tsconfigs, empty stubs) | −56.98 MB |
 | Git history (pack, all 61 remote branches) | 94.4 MiB | 94.4 MiB + a few KB | **unchanged**: no rewrite (see CLEANUP_MANIFEST §4) |
 | `main` only, single-branch clone | 92 MB `.git` + 158 MB tree | ~92 MB `.git` + ~102 MB tree | −56 MB per checkout |
 | Blobless + sparse clone | — | 15 MB `.git` + 27 MB tree | works on today's `main` already |
